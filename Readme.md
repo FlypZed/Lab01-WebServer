@@ -28,9 +28,13 @@ mvn clean package exec:java -D"exec.mainClass"="app.App"
 
 * http://localhost:35000/app/home.html
 
+![image](https://github.com/user-attachments/assets/42af8f3f-b4fb-4591-9a15-d28019e95a57)
+
 Si intenta acceder a un servicio inexistente, se redirigirá a una página de error 404. Por ejemplo:
 
 * http://localhost:35000/app/a.html
+
+![image](https://github.com/user-attachments/assets/308dafee-213d-4b14-a12c-70e5812e118b)
 
 Para visualizar un archivo específico, como una hoja de estilos, use: 
 
