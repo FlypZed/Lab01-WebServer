@@ -101,34 +101,6 @@ public class HttpServer {
      */
     private static String index(){
         return "<!DOCTYPE html>\n" +
-                "<html>\n" +
-                "<head>\n" +
-                "    <title>Buscador de peliculas</title>\n" +
-                "    <meta charset=\"UTF-8\">\n" +
-                "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n" +
-                "</head>\n" +
-                "<body>\n" +
-                "<h1>Buscar una pelicula</h1>\n" +
-                "<form action=\"/hello\">\n" +
-                "    <label for=\"name\">Titulo de la pelicula a buscar:</label><br>\n" +
-                "    <input type=\"text\" id=\"name\" name=\"name\" value=\"The Avengers\"><br><br>\n" +
-                "    <input type=\"button\" value=\"Submit\" onclick=\"loadGetMsg()\">\n" +
-                "</form>\n" +
-                "<div id=\"getrespmsg\"></div>\n" +
-                "\n" +
-                "<script>\n" +
-                "            function loadGetMsg() {\n" +
-                "                let nameVar = document.getElementById(\"name\").value;\n" +
-                "                const xhttp = new XMLHttpRequest();\n" +
-                "                xhttp.onload = function() {\n" +
-                "                    document.getElementById(\"getrespmsg\").innerHTML =\n" +
-                "                    this.responseText;\n" +
-                "                }\n" +
-                "                xhttp.open(\"GET\", \"/info?title=\"+nameVar);\n" +
-                "                xhttp.send();\n" +
-                "            }\n" +
-                "        </script>\n" +
-                "</body>\n" +
                 "</html>";
     }
 }
