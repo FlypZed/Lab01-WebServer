@@ -40,6 +40,11 @@ Para visualizar un archivo específico, como una hoja de estilos, use:
 
 * http://localhost:35000/app/home.css
 
+
+### Arquitectura
+
+La estructura seguida para este prototipo es de un servidor web monolitico donde todas las funcionalidadesestan empaquetadas en una sola aplicacion. La comunicación asíncrona con los servicios REST en el backend se maneja mediante JavaScript en el frontend
+
 ## Documentación
 
 La documentación del proyecto se encuentra en la carpeta javadoc. Para regenerarla, ejecute el siguiente comando:
